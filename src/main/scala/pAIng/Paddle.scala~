@@ -1,0 +1,28 @@
+package pAIng
+
+class Paddle {
+  var position = 0
+  var size = 1
+
+  def move(dist : Int) {
+    position += dist
+  }
+
+  def getPosition() = {
+    position
+  }
+
+  def isColliding(x : Int) = {
+    x <= size && x >= position
+  }
+
+  def setSize(x : Int) {
+    if(x == 0)
+      throw new Exception
+    size = x
+  }
+
+  def getSize() = {
+    1
+  }
+}

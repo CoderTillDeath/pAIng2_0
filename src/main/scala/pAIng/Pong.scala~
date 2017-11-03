@@ -1,0 +1,17 @@
+package pAIng
+
+class Pong {
+  var P1Y = 0
+
+  def get_P1_position() = {
+    P1Y
+  }
+
+  def get_P2_position() = {
+    0
+  }
+
+  def moveP1(pos : Int){
+    P1Y += pos
+  }
+}

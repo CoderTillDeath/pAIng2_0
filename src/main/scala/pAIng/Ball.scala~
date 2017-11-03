@@ -1,0 +1,37 @@
+package pAIng
+
+class Ball {
+  var x = 10
+  var y = 10
+  var xspeed = 1
+  var yspeed = 1
+
+  def getX() = {
+    x
+  }
+
+  def getY() = {
+    y
+  }
+
+  def update() {
+    x += xspeed
+    y += yspeed
+  }
+
+  def setSpeed(sp : Double) {
+    var angle : Double = _
+    if(xspeed == 0) {
+      if(yspeed > 0) {
+        Math.PI * 0.5
+      }
+      else {
+        angle = Math.PI * 1.5
+      }
+    }
+  }
+
+  def reflectYSpeed() {
+
+  }
+}
